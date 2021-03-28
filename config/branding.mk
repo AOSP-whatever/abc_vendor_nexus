@@ -12,9 +12,9 @@ endif
 #endif
 
 # Sign builds if building an official or weekly build
-ifeq ($(filter-out OFFICIAL WEEKLIES,$(ABC_BUILD_TYPE)),)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/security/releasekey
-endif
+#ifeq ($(filter-out OFFICIAL WEEKLIES,$(ABC_BUILD_TYPE)),)
+ #   PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/security/releasekey
+#endif
 
 # Set all versions
 BUILD_DATE := $(shell date -u +%Y%m%d)
